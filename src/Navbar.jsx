@@ -1,9 +1,12 @@
 import React from 'react';
-import { NavLink } from 'react-router';
+import { NavLink, useLocation, useNavigate } from 'react-router';
 import { FaSearch } from "react-icons/fa";
 
 
 const Navbar = () => {
+	const navigate =useNavigate()
+	const {pathname} = useLocation()
+	
     return (
 		<div className="navbar bg-base-100 shadow-sm">
 		<div className="navbar-start">
@@ -14,7 +17,7 @@ const Navbar = () => {
 			<ul
 			  tabIndex={0}
 			  className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow font-bold">
-			 <li className=' active:text-blue-600'><NavLink to="/">Home</NavLink></li>
+			 <li ><NavLink to="/">Home</NavLink></li>
 			<li><NavLink to="/details">Details</NavLink></li>
 			<li><NavLink to="/profile">Profile</NavLink></li>
 			</ul>
@@ -30,8 +33,8 @@ const Navbar = () => {
 		  </ul>
 		</div>
 		<div className="navbar-end gap-1">
-		  <NavLink className="btn btn-primary">Login</NavLink>
-		  <NavLink className="btn btn-primary">Logout</NavLink>
+		  <button onClick={()=>navigate("/signin")} className={`btn  ${pathname=="/signin"?"bg-blue-500 text-white":""}`}>Sign in</button>
+		  <button onClick={()=>navigate("/signup")}  className={`btn ${pathname=="/signup"?"bg-blue-500 text-white":""}`}>Sign up</button>
 		</div>
 	  </div>
     );

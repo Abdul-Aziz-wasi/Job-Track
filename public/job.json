@@ -4,11 +4,12 @@
       "name": "Google",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
       "location": "San Francisco, CA",
-      "website": "https://google.com",
+      
       "industry": "Information Technology",
       "jobs": [
         {
           "id": "job_001",
+          "website": "https://google.com",
           "title": "Senior Software Engineer",
           "bannerImage": "https://example.com/jobs/software-engineer.jpg",
           "location": "Remote",
@@ -18,6 +19,7 @@
         },
         {
           "id": "job_002",
+          "website": "https://google.com",
           "title": "DevOps Specialist",
           "bannerImage": "https://example.com/jobs/devops.jpg",
           "location": "San Francisco, CA",
@@ -32,11 +34,12 @@
       "name": "Microsoft",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg",
       "location": "Denver, CO",
-      "website": "https://microsoft.com",
+      
       "industry": "Renewable Energy",
       "jobs": [
         {
           "id": "job_003",
+          "website": "https://microsoft.com",
           "title": "Solar Project Manager",
           "bannerImage": "https://example.com/jobs/solar-manager.jpg",
           "location": "Denver, CO",
@@ -51,11 +54,12 @@
       "name": "IBM",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg",
       "location": "New York, NY",
-      "website": "https://ibm.com",
+      
       "industry": "Food Delivery",
       "jobs": [
         {
           "id": "job_004",
+          "website": "https://ibm.com",
           "title": "Mobile App Developer",
           "bannerImage": "https://example.com/jobs/app-developer.jpg",
           "location": "Remote",
@@ -65,6 +69,7 @@
         },
         {
           "id": "job_005",
+          "website": "https://ibm.com",
           "title": "Customer Support",
           "bannerImage": "https://example.com/jobs/support.jpg",
           "location": "New York, NY",
@@ -85,6 +90,7 @@
       "jobs": [
         {
           "id": "job_010",
+          "website": "https://dell.com",
           "title": "Mechanical Engineer",
           "bannerImage": "https://example.com/jobs/engineer.jpg",
           "location": "Detroit, MI",
@@ -94,6 +100,7 @@
         },
         {
           "id": "job_011",
+          "website": "https://dell.com",
           "title": "Sales Representative",
           "bannerImage": "https://example.com/jobs/sales.jpg",
           "location": "Multiple Locations",

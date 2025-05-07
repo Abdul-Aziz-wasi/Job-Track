@@ -9,6 +9,8 @@ import Profile from "../Profile";
 import JobDetails from "../JobDetails";
 import JobInfo from "../JobInfo";
 import JobApply from "../JobApply";
+import SignIn from "../SignIn";
+import SignUp from "../SignUp";
   
 
   
@@ -45,6 +47,14 @@ import JobApply from "../JobApply";
           path:"/job-apply/:id",
           Component:JobApply,
           loader:()=>fetch("/job.json")
+        },
+        {
+          path:"/signin",
+          Component:SignIn
+        },
+        {
+          path:"/signup",
+          Component:SignUp
         }
        
      ]

@@ -6,7 +6,7 @@ const JobDetails = () => {
     const {id}=useParams()
     const data =useLoaderData()
     const singleData =data.find(data=>data.id ==id)
-    const {logo,name,website,location,jobs}=singleData;
+    const {logo,name,location,jobs}=singleData;
     console.log(jobs)
     
     return (
