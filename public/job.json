@@ -1,10 +1,10 @@
 [
     {
       "id": "comp_001",
-      "name": "TechNova Solutions",
-      "logo": "https://example.com/logos/technova.png",
+      "name": "Google",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
       "location": "San Francisco, CA",
-      "website": "https://technova.example.com",
+      "website": "https://google.com",
       "industry": "Information Technology",
       "jobs": [
         {
@@ -29,10 +29,10 @@
     },
     {
       "id": "comp_002",
-      "name": "GreenEarth Energy",
-      "logo": "https://example.com/logos/greenearth.png",
+      "name": "Microsoft",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg",
       "location": "Denver, CO",
-      "website": "https://greenearth.example.com",
+      "website": "https://microsoft.com",
       "industry": "Renewable Energy",
       "jobs": [
         {
@@ -48,10 +48,10 @@
     },
     {
       "id": "comp_003",
-      "name": "UrbanEats",
-      "logo": "https://example.com/logos/urbaneats.png",
+      "name": "IBM",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg",
       "location": "New York, NY",
-      "website": "https://urbaneats.example.com",
+      "website": "https://ibm.com",
       "industry": "Food Delivery",
       "jobs": [
         {
@@ -74,78 +74,13 @@
         }
       ]
     },
-    {
-      "id": "comp_004",
-      "name": "MediCare Plus",
-      "logo": "https://example.com/logos/medicare.png",
-      "location": "Boston, MA",
-      "website": "https://medicareplus.example.com",
-      "industry": "Healthcare",
-      "jobs": [
-        {
-          "id": "job_006",
-          "title": "Registered Nurse",
-          "bannerImage": "https://example.com/jobs/nurse.jpg",
-          "location": "Boston, MA",
-          "salary": "$75,000 - $95,000",
-          "jobType": "Full-time",
-          "description": "Provide patient care in our cardiology department."
-        }
-      ]
-    },
-    {
-      "id": "comp_005",
-      "name": "FinEdge Capital",
-      "logo": "https://example.com/logos/finedge.png",
-      "location": "Chicago, IL",
-      "website": "https://finedge.example.com",
-      "industry": "Financial Services",
-      "jobs": [
-        {
-          "id": "job_007",
-          "title": "Financial Analyst",
-          "bannerImage": "https://example.com/jobs/analyst.jpg",
-          "location": "Chicago, IL",
-          "salary": "$90,000 - $120,000",
-          "jobType": "Full-time",
-          "description": "Prepare investment reports and market analysis."
-        },
-        {
-          "id": "job_008",
-          "title": "Compliance Officer",
-          "bannerImage": "https://example.com/jobs/compliance.jpg",
-          "location": "Hybrid",
-          "salary": "$110,000 - $130,000",
-          "jobType": "Full-time",
-          "description": "Ensure regulatory compliance across all operations."
-        }
-      ]
-    },
-    {
-      "id": "comp_006",
-      "name": "EduFuture Learning",
-      "logo": "https://example.com/logos/edufuture.png",
-      "location": "Austin, TX",
-      "website": "https://edufuture.example.com",
-      "industry": "Education Technology",
-      "jobs": [
-        {
-          "id": "job_009",
-          "title": "Curriculum Designer",
-          "bannerImage": "https://example.com/jobs/curriculum.jpg",
-          "location": "Remote",
-          "salary": "$65,000 - $85,000",
-          "jobType": "Full-time",
-          "description": "Create STEM learning modules for K-12 students."
-        }
-      ]
-    },
+   
     {
       "id": "comp_007",
-      "name": "AutoNation Motors",
-      "logo": "https://example.com/logos/autonation.png",
+      "name":  "Dell",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/4/48/Dell_Logo.svg",
       "location": "Detroit, MI",
-      "website": "https://autonation.example.com",
+      "website": "https://dell.com",
       "industry": "Automotive",
       "jobs": [
         {
@@ -167,24 +102,5 @@
           "description": "Sell our latest vehicle models at dealerships."
         }
       ]
-    },
-    {
-      "id": "comp_008",
-      "name": "Oceanic Cruises",
-      "logo": "https://example.com/logos/oceanic.png",
-      "location": "Miami, FL",
-      "website": "https://oceanic.example.com",
-      "industry": "Travel & Hospitality",
-      "jobs": [
-        {
-          "id": "job_012",
-          "title": "Cruise Director",
-          "bannerImage": "https://example.com/jobs/cruise.jpg",
-          "location": "At Sea",
-          "salary": "$70,000 - $90,000",
-          "jobType": "Full-time",
-          "description": "Oversee entertainment and guest activities aboard our ships."
-        }
-      ]
-    }
-  ]
+    }]
+    
