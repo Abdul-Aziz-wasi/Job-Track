@@ -3,6 +3,7 @@ import { Outlet } from 'react-router';
 import Navbar from '../Navbar';
 import { createUserWithEmailAndPassword,  onAuthStateChanged,  signInWithEmailAndPassword, signOut } from 'firebase/auth';
 import { auth } from '../firebase/firebase.config';
+import Footer from '../Footer';
 
 export const valueContext =createContext()
 const Root = () => {
@@ -75,6 +76,7 @@ const Root = () => {
             <valueContext.Provider value={contextValue}>
             <Navbar></Navbar>
             <Outlet></Outlet>
+            <Footer></Footer>
             </valueContext.Provider>
         </div>
     );

@@ -11,7 +11,7 @@ import JobInfo from "../JobInfo";
 import JobApply from "../JobApply";
 import SignIn from "../SignIn";
 import SignUp from "../SignUp";
-import PrivateRoute from "../PrivateRoute";
+
   
 
   
