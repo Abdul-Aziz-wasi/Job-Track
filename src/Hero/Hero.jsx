@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Hero = () => {
     return (
         <div className="hero bg-blue-500 min-h-screen">

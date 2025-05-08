@@ -11,6 +11,7 @@ import JobInfo from "../JobInfo";
 import JobApply from "../JobApply";
 import SignIn from "../SignIn";
 import SignUp from "../SignUp";
+import PrivateRoute from "../PrivateRoute";
   
 
   
@@ -30,16 +31,16 @@ import SignUp from "../SignUp";
             Component:Details
         },
         {
-            path:"profile",
+            path:"/profile",
             Component:Profile
         },
         {
           path:"/jobdetails/:id",
-          Component:JobDetails,
+         Component:JobDetails,
           loader:()=>fetch("/job.json")
         },
         {
-          path:"/jobinfo",
+          path:"/jobinfo/:id",
           Component:JobInfo,
           
         },

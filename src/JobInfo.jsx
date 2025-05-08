@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 
 
-const JobInfo = ({job}) => {
+const  JobInfo = ({job}) => {
    
     
     return (

@@ -1,19 +1,22 @@
-import React, { createContext } from 'react';
+import React, { createContext,  useEffect,  useState } from 'react';
 import { Outlet } from 'react-router';
 import Navbar from '../Navbar';
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
+import { createUserWithEmailAndPassword,  onAuthStateChanged,  signInWithEmailAndPassword, signOut } from 'firebase/auth';
 import { auth } from '../firebase/firebase.config';
 
 export const valueContext =createContext()
 const Root = () => {
+    const [user, setUser]=useState(null);
+    console.log(user)
     const handleSignIn =(email,password)=>{
-        console.log("login",email,password)
+      
 
         signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
           
           const user = userCredential.user;
           console.log(user)
+          setUser(user)
          
         })
         .catch((error) => {
@@ -36,10 +39,36 @@ const Root = () => {
             console.log(error)
           });
     }
+
+    const logOut =()=>{
+
+
+        return signOut(auth)
+    }
+
+    useEffect(()=>{
+     const unsubscribe=   onAuthStateChanged(auth,(currentUser)=>{
+            setUser(currentUser)
+        });
+        return ()=>{
+            unsubscribe()
+
+        }
+
+    },[])
+
+
+
     const contextValue ={
         handleSignIn,
-        handleSignUp
+        handleSignUp,
+        user,
+        setUser,
+        logOut
     }
+
+
+   
     return (
         <div>
            

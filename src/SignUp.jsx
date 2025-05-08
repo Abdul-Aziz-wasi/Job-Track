@@ -1,16 +1,22 @@
 import React, { useContext } from 'react';
-import { NavLink } from 'react-router';
+import { NavLink} from 'react-router';
 import { valueContext } from './Root/Root';
 
 
 const SignUp = () => {
-    const {handleSignUp}=useContext(valueContext)
+    const {handleSignUp,setUser}=useContext(valueContext)
     const handleSubmit=(e)=>{
         e.preventDefault()
         const user = e.target.user.value;
+        console.log(user)
         const email =e.target.email.value;
         const password =e.target.password.value;
         const confirmPassword =e.target.confirmpassword.value;
+
+        handleSignUp(email,password)
+        setUser()
+
+
         if(password.length < 6){
             alert("password must be greater than 6 digit or equal");
             return;
@@ -28,9 +34,11 @@ const SignUp = () => {
             return;
         }
         handleSignUp(email,password)
+       
         
         
     }
+    // const navigate=useNavigate()
     return (
         <div className="flex flex-col max-w-md mx-auto p-6 rounded-md sm:p-10 dark:bg-gray-50 my-4 bg-black text-white">
         <div className="mb-8 text-center">
@@ -64,7 +72,7 @@ const SignUp = () => {
             </div>
             <div className="space-y-2">
                 <div>
-                    <button type="submit" className="w-full px-8 py-3 font-semibold rounded-md dark:bg-violet-600 dark:text-gray-50">Sign up</button>
+                    <button  type="submit" className="w-full px-8 py-3 font-semibold rounded-md dark:bg-violet-600 dark:text-gray-50">Sign up</button>
                 </div>
                 <p className="px-6 text-sm text-center dark:text-gray-600">Already have an account?
                     <NavLink to="/signin" rel="noopener noreferrer" href="#" className="hover:underline text-blue-600">Sign in</NavLink>.

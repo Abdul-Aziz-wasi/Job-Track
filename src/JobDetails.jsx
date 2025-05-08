@@ -1,13 +1,22 @@
-import React from 'react';
-import { useLoaderData, useParams } from 'react-router';
+import React, { useContext } from 'react';
+import { useLoaderData, useNavigate, useParams } from 'react-router';
 import JobInfo from './JobInfo';
+import { valueContext } from './Root/Root';
 
 const JobDetails = () => {
     const {id}=useParams()
     const data =useLoaderData()
     const singleData =data.find(data=>data.id ==id)
     const {logo,name,location,jobs}=singleData;
-    console.log(jobs)
+    
+
+    const {user}=useContext(valueContext);
+    const navigate =useNavigate()
+
+    if(!user || !user?.email){
+      navigate("/signin")
+
+    }
     
     return (
        <div>

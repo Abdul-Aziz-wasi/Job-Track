@@ -1,21 +1,20 @@
 
 import React, {  useContext } from 'react';
-import { NavLink } from 'react-router';
+import { NavLink, useNavigate } from 'react-router';
 
 import { valueContext } from './Root/Root';
 
 const SignIn = () => {
-    const {handleSignIn} =useContext(valueContext)
+    const {handleSignIn,setUser} =useContext(valueContext)
     const handleSubmit =(e)=>{
         e.preventDefault()
         const email =e.target.email.value;
         const password =e.target.password.value
-        console.log("submit")
         handleSignIn(email,password)
-
-       
+        setUser()
 
     }
+    const navigate =useNavigate()
     return (
         <div className="w-full max-w-md p-4 rounded-md shadow sm:p-8 bg-black mx-auto text-white my-4">
 	<h2 className="mb-3 text-3xl font-semibold text-center">Sign in your account</h2>
@@ -51,7 +50,7 @@ const SignIn = () => {
 				<input type="password" name="password" id="password" placeholder="*****" className="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600" />
 			</div>
 		</div>
-		<button type="submit" className="w-full px-8 py-3 font-semibold rounded-md dark:bg-violet-600 dark:text-gray-50">Sign in</button>
+		<button onClick={()=>navigate("/")}  type="submit" className="w-full px-8 py-3 font-semibold rounded-md dark:bg-violet-600 dark:text-gray-50">Sign in</button>
 	</form>
 </div>
     );
