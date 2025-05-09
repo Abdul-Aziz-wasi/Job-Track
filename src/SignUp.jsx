@@ -4,7 +4,7 @@ import { valueContext } from './Root/Root';
 
 
 const SignUp = () => {
-    const {handleSignUp,setUser}=useContext(valueContext)
+    const {handleSignUp,setUser,updateuser}=useContext(valueContext)
     const handleSubmit=(e)=>{
         e.preventDefault()
         const user = e.target.user.value;
@@ -15,6 +15,12 @@ const SignUp = () => {
 
         handleSignUp(email,password)
         setUser()
+        updateuser({displayName:name}).then(()=>{
+            setUser(...user,name)
+        }).catch((error)=>{
+            console.log(error)
+            setUser(user)
+        })
 
 
         if(password.length < 6){
