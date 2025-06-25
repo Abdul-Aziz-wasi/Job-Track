@@ -16,7 +16,7 @@ A responsive web application built with React that helps users track their job a
 - **React.js** – Frontend Framework
 - **Tailwind CSS** – Styling
 - **React Router** – Page navigation
-- **LocalStorage / Firebase (if used)** – For data storage
+- **LocalStorage / Firebase (if used)
 - **Framer Motion** – For animations
 
 ---
@@ -28,7 +28,7 @@ A responsive web application built with React that helps users track their job a
 - ❌ Delete jobs
 - 🔍 Filter/search by job status or title
 - 📱 Fully responsive layout (mobile, tablet, desktop)
-- 💾 LocalStorage-based data persistence *(if no database)*
+- 💾 LocalStorage-based data persistence 
 
 ---
 
@@ -38,7 +38,7 @@ A responsive web application built with React that helps users track their job a
 - `react-dom`
 - `react-router-dom`
 - `tailwindcss`
-- `framer-motion` *(if used)*
+- `framer-motion` 
 
 ---
 
