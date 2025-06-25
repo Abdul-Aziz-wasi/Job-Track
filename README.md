@@ -1,12 +1,58 @@
-# React + Vite
+# 🧾 Job Track App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive web application built with React that helps users track their job applications easily. Users can add, update, and delete job listings with custom statuses like Applied, Interviewing, Rejected, or Hired. Designed for simplicity and productivity to streamline the job hunting process.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## 🚀 Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🔗 [View Live App](https://zesty-salamander-22fe8f.netlify.app/)
+
+---
+
+## 🛠️ Built With
+
+- **React.js** – Frontend Framework
+- **Tailwind CSS** – Styling
+- **React Router** – Page navigation
+- **LocalStorage / Firebase (if used)** – For data storage
+- **Framer Motion** – For animations
+
+---
+
+## ✨ Features
+
+- ➕ Add job applications with position, company, and status
+- 📝 Edit or update existing jobs
+- ❌ Delete jobs
+- 🔍 Filter/search by job status or title
+- 📱 Fully responsive layout (mobile, tablet, desktop)
+- 💾 LocalStorage-based data persistence *(if no database)*
+
+---
+
+## 📦 Dependencies
+
+- `react`
+- `react-dom`
+- `react-router-dom`
+- `tailwindcss`
+- `framer-motion` *(if used)*
+
+---
+
+## ⚙️ How to Run Locally
+
+```bash
+# Clone the repository
+git clone https://github.com/Abdul-Aziz-wasi/job-track-app.git
+
+# Navigate into the project
+cd job-track-app
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
